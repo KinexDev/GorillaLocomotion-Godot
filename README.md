@@ -1,6 +1,8 @@
 # Gorilla Locomotion Godot
 this is a port of the [gorilla locomotion](https://github.com/Another-Axiom/GorillaLocomotion) which is the locomotion used in gorilla tag to godot.
 
+![Untitledvideo-MadewithClipchamp-ezgif com-optimize](https://github.com/user-attachments/assets/c87973fc-c127-459a-928e-9acd90442ad0)
+
 # Physics Engine
 this locomotion does require jolt physics, default godot physics are way too unstable for this rig, you can use it without but it is very unstable.
 
