@@ -15,3 +15,6 @@ this project was made in a day because i was bored and haven't used godot in a y
 you can download the locomotion it by downloading the godot project under this repository
 
 everything is nicely put together, you can get the player using the player_container scene
+
+# Disclaimer
+i am not affiliated with Another Axiom, creators of GorillaLocomotion.
