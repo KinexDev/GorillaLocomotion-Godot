@@ -1,5 +1,5 @@
 # Gorilla Locomotion Godot
-this is a port of the [gorilla locomotion](https://github.com/Another-Axiom/GorillaLocomotion) which is the locomotion used in gorilla tag to godot.
+this is a port of the [gorilla locomotion](https://github.com/Another-Axiom/GorillaLocomotion) which is the locomotion used in gorilla tag ported to godot.
 
 ![Untitledvideo-MadewithClipchamp-ezgif com-optimize](https://github.com/user-attachments/assets/c87973fc-c127-459a-928e-9acd90442ad0)
 
