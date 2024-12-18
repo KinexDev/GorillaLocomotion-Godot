@@ -16,5 +16,7 @@ you can download the locomotion it by downloading the godot project under this r
 
 everything is nicely put together, you can get the player using the player_container scene
 
+i personally wouldn't recommend making a godot multiplayer game like gorilla tag because of how insecure godot really is, its what made me quit it.
+
 # Disclaimer
 i am not affiliated with Another Axiom, creators of GorillaLocomotion.
