@@ -1,0 +1,11 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1734538978
+icon.svg::CompressedTexture2D::7084191377732865409::1734536845::1734536858::1::::<><>::
+openxr_action_map.tres::OpenXRActionMap::3632780272700734606::1734538978::0::1::::<><>::
+::res://Materials/::1734538978
+Checkered.tres::StandardMaterial3D::2410703522117221439::1734538978::0::1::::<><>::
+::res://Scenes/::1734540712
+main.tscn::PackedScene::715423014378526350::1734540787::0::1::::<><>::uid://bal061vollvv0::::res://Materials/Checkered.tres
+player.gd::GDScript::-1::1734540712::0::1::::<>CharacterBody3D<>::
+::res://Scripts/::1734540128
+xr.gd::GDScript::-1::1734539021::0::1::::<>Node3D<>::
