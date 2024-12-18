@@ -1,0 +1,66 @@
+[gd_scene load_steps=5 format=3 uid="uid://bkht4dgldahe"]
+
+[ext_resource type="Script" path="res://Scripts/player.gd" id="1_8b7d2"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_knk53"]
+radius = 0.15
+height = 0.6
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_55h62"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_cx410"]
+
+[node name="PlayerContainer" type="Node3D"]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 1.52083, -12.6829)
+script = ExtResource("1_8b7d2")
+max_jump_speed = 8.0
+jump_multiplier = 1.15
+
+[node name="Player" type="CharacterBody3D" parent="."]
+physics_interpolation_mode = 1
+collision_layer = 2
+platform_floor_layers = 4294967041
+
+[node name="XROrigin3D" type="XROrigin3D" parent="Player"]
+
+[node name="Head" type="XRCamera3D" parent="Player/XROrigin3D"]
+
+[node name="LeftHand" type="XRController3D" parent="Player/XROrigin3D"]
+tracker = &"left_hand"
+
+[node name="Follow" type="Node3D" parent="Player/XROrigin3D/LeftHand"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.05)
+
+[node name="RightHand" type="XRController3D" parent="Player/XROrigin3D"]
+tracker = &"right_hand"
+
+[node name="Follow" type="Node3D" parent="Player/XROrigin3D/RightHand"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.05)
+
+[node name="Collision" type="CollisionShape3D" parent="Player"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.25, 0)
+shape = SubResource("CapsuleShape3D_knk53")
+
+[node name="LeftHandFollower" type="CharacterBody3D" parent="."]
+physics_interpolation_mode = 2
+collision_layer = 2
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="LeftHandFollower"]
+transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0, 0, 0)
+shape = SubResource("SphereShape3D_55h62")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="LeftHandFollower/CollisionShape3D"]
+mesh = SubResource("SphereMesh_cx410")
+skeleton = NodePath("../..")
+
+[node name="RightHandFollower" type="CharacterBody3D" parent="."]
+physics_interpolation_mode = 2
+collision_layer = 2
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RightHandFollower"]
+transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0, 0, 0)
+shape = SubResource("SphereShape3D_55h62")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="RightHandFollower/CollisionShape3D"]
+mesh = SubResource("SphereMesh_cx410")
+skeleton = NodePath("../..")

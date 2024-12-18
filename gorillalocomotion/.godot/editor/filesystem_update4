@@ -1,7 +1,0 @@
-res://Scenes/main.tscn
-res://openxr_action_map.tres
-res://Materials/Checkered.tres
-res://Scripts/xr.gd
-res://Scripts/csgtest.gd
-res://Scenes/player.gd
-res://Scripts/player.gd

@@ -1,1 +1,0 @@
-StandardMaterial3D
