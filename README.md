@@ -7,6 +7,6 @@ this locomotion does require jolt physics, default godot physics are way too uns
 # How does it compare?
 this locomotion feels way better than [miziziz's rig](https://github.com/Miziziziz/GodotGorillaTagMovement) which is what inspired me to make this and very closely imitates the gorilla locomotion. there are some issues with the locomotion that i could notice but it's nothing that shouldn't be hard to fix.
 
-this project was made in a day because i was bored lol
+this project was made in a day because i was bored and haven't used godot in a year
 
 you can download it by downloading the godot project under this repository
