@@ -1,2 +1,2 @@
 # Gorilla Locomotion Godot
-a complete rewrite of the gorilla tag locomotion in godot written in GDScript
+this is a port of the (gorilla locomotion)[https://github.com/Another-Axiom/GorillaLocomotion] in godot
