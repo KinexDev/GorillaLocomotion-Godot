@@ -1,5 +1,6 @@
 # Gorilla Locomotion Godot
 this is a port of the [gorilla locomotion](https://github.com/Another-Axiom/GorillaLocomotion) which is the locomotion used in gorilla tag ported to godot.
+current implementation is using characterbodys and no shapecasts (that might be something i look into in the future)
 
 ![Untitledvideo-MadewithClipchamp-ezgif com-optimize](https://github.com/user-attachments/assets/c87973fc-c127-459a-928e-9acd90442ad0)
 
